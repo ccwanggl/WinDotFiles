@@ -23,7 +23,7 @@
     # dark = true
     # light = true
 	side-by-side = true
-	syntax-theme = gruxbov-dark
+	syntax-theme = gruvbox-dark
 	line-numbers = true
 [merge]
     conflictstyle = diff3
