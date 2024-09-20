@@ -14,7 +14,7 @@
 	attributesfile = ~/.attributes_global
 	ignorecase = true
 	untrackedcache = true
-  	pager = delta
+  pager = delta
 [interactive]
     diffFilter = delta --color-only
 [delta]
@@ -23,7 +23,7 @@
     # dark = true
     # light = true
 	side-by-side = true
-	syntax-theme = gruxbox-dark
+	syntax-theme = gruxbov-dark
 	line-numbers = true
 [merge]
     conflictstyle = diff3
