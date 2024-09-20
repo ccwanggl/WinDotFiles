@@ -1,0 +1,67 @@
+[user]
+	email = guoliang.wang@cust.edu.cn
+	name = guoliang (WORKSTATION)
+	useConfigOnly = true
+[credential "https://gitee.com"]
+	provider = generic
+[core]
+	editor = nvim
+	quotepath = false
+	longpaths = true
+	autocrlf = true
+	trustctime = false
+	excludesfile = ~/.gitignore_global
+	attributesfile = ~/.attributes_global
+	ignorecase = true
+	untrackedcache = true
+  	pager = delta
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    # delta detects terminal colors automatically; set one of these to disable auto-detection
+    # dark = true
+    # light = true
+	side-by-side = true
+	syntax-theme = gruxbox-dark
+	line-numbers = true
+[merge]
+    conflictstyle = diff3
+[diff]
+    colorMoved = default
+[difftool "sourcetree"]
+	cmd = "'' "
+[mergetool "sourcetree"]
+	cmd = "'' "
+	trustExitCode = true
+[init]
+	defaultBranch = master
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[http]
+	postBuffer = 655360000
+	sslcainfo = C:\\Users\\cnm2020\\AppData\\Local\\UGit\\ssl\\certs\\ca-bundle.trust.crt
+	sslbackend = schannel
+[diff "text"]
+	textconv = cat
+[mergetool]
+	keepBackup = false
+[lfs]
+	concurrenttransfers = 16
+	fetchrecentrefsdays = 0
+	pruneoffsetdays = 0
+	dialtimeout = 3
+	tlstimeout = 3
+[merge "lfs-text"]
+	driver = git lfs merge-driver --ancestor %O --current %A --other %B --marker-size %L --output %A --program 'git merge-file --stdout --marker-size=%%L %%A %%O %%B >%%D'
+[rebase]
+	backend = merge
+[protocol]
+	version = 1
+[pull]
+	rebase = false
+[safe]
+	directory = *
