@@ -50,7 +50,7 @@
 [mergetool]
 	keepBackup = false
 [lfs]
-	concurrenttransfers = 16
+	concurrenttransfers = 32
 	fetchrecentrefsdays = 0
 	pruneoffsetdays = 0
 	dialtimeout = 3
