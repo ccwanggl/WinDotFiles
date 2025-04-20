@@ -11,10 +11,18 @@ if(-not (Get-Module -ListAvailable -Name Terminal-Icons))
   Install-Module -Name Terminal-Icons -Force -Scope CurrentUser
   Import-Module -Name Terminal-Icons
 }
+else 
+{
+  Import-Module -Name Terminal-Icons
+}
 
 if(-not (Get-Module -ListAvailable -Name posh-git))
 {
   Install-Module -Name posh-git -Force -Scope CurrentUser
+  Import-Module posh-git
+}
+else 
+{
   Import-Module posh-git
 }
 
